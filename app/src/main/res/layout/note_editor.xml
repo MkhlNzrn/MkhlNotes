@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_folder"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView_saveNote"
+                android:src="@drawable/save_icon"
+                android:layout_alignParentEnd="true"
+                android:padding="6dp"
+                android:background="@android:color/transparent"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editText_noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note title: "
+        android:textColorHint="@color/black"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_noteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note text: "
+        android:textColorHint="@color/black"
+        android:padding="8dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        >
+    </EditText>
+
+</LinearLayout>
